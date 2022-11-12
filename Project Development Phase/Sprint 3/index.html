@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}" />
+   <!-- <link rel="stylesheet" href="style.css">-->
+    <title>Model Deployment</title>
+
+
+</head>
+<body>
+    <image src="{{ url_for('static', filename='images/header.jpeg') }}" alt="Girl in a jacket" style="width: 1880px;height: 150px;">
+
+ 
+        <center>
+        <h1><b>UNIVERSITY ADMIT PREDICTION SYSTEM </b></h1>
+        <h2>Enter your details and get probability of your admission</h2>
+        <form action="{{ url_for('predict')}}" method="post">
+        <table>
+            <tr><th>Enter GRE score:</th>
+                <td><input type="number" name="precp" placeholder="Enter GRE score" ></td></tr>
+            <tr><th>Enter TOFEL score</th>
+                <td><input type="number" name="maxT" placeholder="Enter TOFEL score" ></td></tr>
+            <tr><th>University number</th>
+                <td><select name="no">
+                    <option value="1">1-Stanford</option>
+                    <option value="2">2-Windsor</option>
+                    <option value="3">3-Michigan</option>
+                    <option value="4">4-Harvard</option>
+                    <option value="5">5-University of Toronto</option>
+                </select></td>
+                </tr></br>
+                
+                            
+            
+                                <!--<tr><th>Enter SOP </th>
+                                    <td><input type="number" name="sop" placeholder="sop" ></td></tr> -->
+                                    <tr><th>Enter cgpa </th>
+                                        <td><input type="number" step="any" name="cgpa" placeholder="cgpa" ></td></tr>         
+                                       <!-- <tr><th>Enter LOR </th>
+                                            <td><input type="number" name="lor" placeholder="lor" ></td></tr>
+        
+                                        <tr><th>Reserach</th>
+  <td><input type="radio" name="RESEARCH" value="RESEARCH">RESEARCH</td></tr> 
+  <tr><th></th>
+    <td><input type="radio" name="NO RESEARCH" value="NO RESEARCH">NO RESEARCH</td></tr>-->
+                           
+</table>
+        <br>
+        <!--<button type="button">PREDICT</button>-->
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+        <br>
+        <br><br>
+        </center>
+
+
+    
+</body>
+</html>
