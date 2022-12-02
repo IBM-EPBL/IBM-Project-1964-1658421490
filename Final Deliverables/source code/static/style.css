@@ -1,0 +1,66 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+button {
+  transition-duration: 0.4s;
+  background-color:rgb(68, 83, 202) ;
+  border: none;
+  color: rgb(240, 235, 238);
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+h2{
+  font-family: "Brush Script MT";
+  font-size:20;
+  padding: 5px 10px;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #171426;
+  background-color: rgb(149, 156, 205);
+  overflow-x: hidden; 
+  
+}
+
+
+table{ 
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  padding: 0.5vmin;
+  border-radius: 1em;
+  border: 2px solid #e5dab6;
+} 
+
+center{
+  display: block;
+  text-align: -webkit-center;
+}
+
+
+
+tr, th, td{
+  padding: 0.5vmax;
+  text-align: left;
+}
+
+input {
+  background-color: #c4c3ca;
+  color: #1f2029;  
+}
